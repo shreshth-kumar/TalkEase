@@ -1,166 +1,121 @@
-📘 TalkEase
+# TalkEase 🗣️  
+**AI Social Anxiety Conversation Coach**
 
-TalkEase is a conversation practice tool designed to help people with social anxiety or anyone who wants to improve communication skills.
-It simulates real conversations and provides instant feedback, confidence scoring, and suggestions for improvement.
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-Active-blue)
+![Made with React](https://img.shields.io/badge/frontend-React-blue)
+![Made with FastAPI](https://img.shields.io/badge/backend-FastAPI-green)
 
-🚀 Features
+---
 
-💬 AI-powered chat simulation
+## 🌟 Demo
 
-🧠 Feedback after each message
+![TalkEase Demo](./assets/demo.gif)
 
-⭐ Confidence score
+> **Note:** Add a `demo.gif` file inside `/assets` folder.  
+> (If you don’t have one yet, you can add later and the GIF will show automatically)
 
-📝 Improved version of your message
+---
 
-🌍 Works with any scenario
+## 🧠 What is TalkEase?
 
-⚡ Fast and simple UI
+TalkEase is an AI-powered conversation coach designed to help people practice real-life social scenarios, especially for social anxiety.  
+It provides:
 
-🧩 Tech Stack
-Backend
+- **Realistic human-like responses**
+- **Feedback on tone & confidence**
+- **Improved message suggestions**
+- **Scenario-based training**
 
-FastAPI
+---
 
-Groq LLM (Llama 3.1 8B Instant)
+## 🧩 Features
 
-Pydantic
+- 🎯 Practice conversations in different scenarios  
+- 🧠 Get instant AI feedback  
+- 💬 Chat-like interface with message bubbles  
+- 🌙 Dark mode UI  
+- 🔒 Safe usage with API keys stored in `.env`
 
-Dotenv
+---
 
-Frontend
+## 🛠️ Tech Stack
 
-React
+| Layer | Tech |
+|------|------|
+| Frontend | React + Tailwind CSS |
+| Backend | FastAPI |
+| AI Model | Groq Llama 3.1 |
+| Deployment | Vercel / Render / Fly.io |
 
-Tailwind CSS
+---
 
-Vite
+## 🗂️ Project Structure
 
-🗂️ Project Structure
+# TalkEase 🗣️  
+**AI Social Anxiety Conversation Coach**
+
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-Active-blue)
+![Made with React](https://img.shields.io/badge/frontend-React-blue)
+![Made with FastAPI](https://img.shields.io/badge/backend-FastAPI-green)
+
+---
+
+## 🌟 Demo
+
+![TalkEase Demo](./assets/demo.gif)
+
+> **Note:** Add a `demo.gif` file inside `/assets` folder.  
+> (If you don’t have one yet, you can add later and the GIF will show automatically)
+
+---
+
+## 🧠 What is TalkEase?
+
+TalkEase is an AI-powered conversation coach designed to help people practice real-life social scenarios, especially for social anxiety.  
+It provides:
+
+- **Realistic human-like responses**
+- **Feedback on tone & confidence**
+- **Improved message suggestions**
+- **Scenario-based training**
+
+---
+
+## 🧩 Features
+
+- 🎯 Practice conversations in different scenarios  
+- 🧠 Get instant AI feedback  
+- 💬 Chat-like interface with message bubbles  
+- 🌙 Dark mode UI  
+- 🔒 Safe usage with API keys stored in `.env`
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Tech |
+|------|------|
+| Frontend | React + Tailwind CSS |
+| Backend | FastAPI |
+| AI Model | Groq Llama 3.1 |
+| Deployment | Vercel / Render / Fly.io |
+
+---
+
+## 🗂️ Project Structure
+
 TalkEase/
+├─ backend/
+│ ├─ main.py
+│ ├─ requirements.txt
+│ └─ .env
 │
-├── backend/
-│   ├── main.py
-│   ├── .env
-│   └── requirements.txt
+├─ frontend/
+│ ├─ src/
+│ ├─ public/
+│ ├─ package.json
+│ └─ tailwind.config.js
 │
-└── frontend/
-    ├── src/
-    ├── public/
-    ├── index.html
-    └── package.json
-
-⚙️ Setup
-1. Backend Setup
-
-Create and activate virtual environment
-
-python -m venv venv
-venv\Scripts\activate   # Windows
-source venv/bin/activate  # Mac/Linux
-
-
-Install requirements
-
-pip install -r requirements.txt
-
-
-Add your .env
-
-GROQ_API_KEY=YOUR_API_KEY
-
-
-Run server
-
-uvicorn main:app --reload
-
-2. Frontend Setup
-
-Install dependencies
-
-npm install
-
-
-Run frontend
-
-npm run dev
-
-🧠 How It Works
-Backend Flow
-
-User sends a message + scenario
-
-Backend sends it to Groq LLM
-
-LLM replies in the format:
-
-[Human Response]
-<reply>
-
----
-Feedback:
-Confidence Score: X/10
-Tone: ...
-Clarity: ...
-What went well:
-- ...
-How to improve:
-- ...
-Improved Version:
-"...."
----
-
-
-Frontend displays the response.
-
-🧪 Example
-
-Scenario:
-
-Talking to a new teammate at a hackathon
-
-User Message:
-
-Hey, I’m Shreshth. Want to work together?
-
-AI Response:
-
-Hey! I’m excited to meet you. Let’s team up and build something awesome.
-
-Feedback:
-
-Confidence Score: 7/10
-
-Tone: friendly
-
-Clarity: clear
-
-Improved Version: “Hey, I’m Shreshth. Want to team up and build something together?”
-
-🧾 Future Improvements
-
-🗣️ Voice input/output
-
-📌 Conversation history
-
-💾 Save & export chats
-
-🎭 Personality-based responses
-
-📊 Dashboard for improvement tracking
-
-⭐ Contribution
-
-If you want to contribute:
-
-Fork the repo
-
-Create a new branch
-
-Make changes
-
-Create a PR
-
-📄 License
-
-MIT License
+└─ README.md
