@@ -26,7 +26,6 @@ It provides:
 - 🧠 Get instant AI feedback  
 - 💬 Chat-like interface with message bubbles  
 - 🌙 Dark mode UI  
-- 🔒 Safe usage with API keys stored in `.env`
 
 ---
 
@@ -37,7 +36,6 @@ It provides:
 | Frontend | React + Tailwind CSS |
 | Backend | FastAPI |
 | AI Model | Groq Llama 3.1 |
-| Deployment | Vercel / Render / Fly.io |
 
 ---
 
