@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "stylelint": "^17.0.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}

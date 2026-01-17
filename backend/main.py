@@ -5,7 +5,6 @@ import os
 from groq import Groq
 from fastapi.middleware.cors import CORSMiddleware
 
-
 load_dotenv()
 
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
@@ -18,7 +17,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 class ChatRequest(BaseModel):
     scenario: str
@@ -58,7 +56,7 @@ Improved Version:
 """
 
 @app.post("/chat")
-def chat(req: ChatRequest):
+async def chat(req: ChatRequest):
     user_prompt = f"""
 Scenario:
 {req.scenario}
