@@ -195,3 +195,4 @@ Tailwind CSS for styling
 Have questions or issues? Feel free to open an issue on the repository.
 
 Happy practicing! Remember, confidence comes with practice. 💪
+
