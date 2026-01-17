@@ -107,6 +107,7 @@ npm install
 
 # Start development server
 npm run dev
+```            
 
 The frontend will be available at http://localhost:5173 (or the port Vite specifies)
 
