@@ -119,3 +119,15 @@ TalkEase/
 │ └─ tailwind.config.js
 │
 └─ README.md
+
+
+---
+
+## 🚀 Getting Started (Local Setup)
+
+### 1️⃣ Backend Setup
+
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
