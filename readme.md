@@ -99,7 +99,7 @@ npm run dev
 The backend will be available at http://localhost:8000
 ---
 ### 2️⃣ Frontend Setup
-
+```bash
 # Navigate to frontend directory
 cd frontend
 
@@ -108,6 +108,7 @@ npm install
 
 # Start development server
 npm run dev
+```
 ---           
 
 The frontend will be available at http://localhost:5173 (or the port Vite specifies)
