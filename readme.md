@@ -94,10 +94,11 @@ npm install
 
 # Start development server
 npm run dev
-
+```
+---
 The backend will be available at http://localhost:8000
-
-2️⃣ Frontend Setup
+---
+### 2️⃣ Frontend Setup
 
 # Navigate to frontend directory
 cd frontend
@@ -107,14 +108,14 @@ npm install
 
 # Start development server
 npm run dev
-```            
+---           
 
 The frontend will be available at http://localhost:5173 (or the port Vite specifies)
-
-3️⃣ Access the Application
+---
+### 3️⃣ Access the Application
 Open your browser and go to http://localhost:5173 to start practicing conversations!
-
-📖 How to Use
+---
+### 📖 How to Use
 Set a Scenario - Describe the social situation you want to practice (e.g., "Asking someone out on a date")
 Write Your Message - Type what you would say in that scenario
 Get Feedback - The AI coach responds realistically and provides:
@@ -128,17 +129,23 @@ Practice & Learn - Use the feedback to refine your communication skills
 🔧 API Endpoints
 POST /chat
 Send a message in a specific scenario and get an AI-generated response with feedback.
+---
+### Request:
 
-Request:
+```bash
 {
   "scenario": "Job interview for a software engineer position",
   "message": "Hi, um, I'm here for the interview, I guess?"
 }
-Response:
+```
+### Response:
+```bash
 {
   "reply": "[Human Response]\n\nHey! Great to have you here. Why don't we get started?\n\n---\nFeedback:\nConfidence Score: 5/10\nTone: nervous\nClarity: somewhat clear\n\nWhat went well:\n- You showed up on time\n\nHow to improve:\n- Speak with more confidence and enthusiasm\n\nImproved Version:\n\"Hi! Thanks for having me. I'm excited to discuss this opportunity.\"\n---"
 }
-🔐 Environment Variables
+```
+---
+### 🔐 Environment Variables
 Create a .env file in the backend directory:
 GROQ_API_KEY=your_groq_api_key_here
 Get your free API key from Groq Console: https://console.groq.com
@@ -152,8 +159,9 @@ npm run preview  # Preview production build
 Backend
 uvicorn main:app --reload              # Start with auto-reload
 uvicorn main:app --reload --port 8000  # Specify port
+---
 
-🌟 Features in Detail
+### 🌟 Features in Detail
 Realistic Responses
 The AI coach responds as a real person would in the given scenario, not as an AI assistant. This creates authentic practice opportunities.
 
@@ -167,8 +175,9 @@ Actionable Suggestions: Specific improvements you can make
 Message Rewrites: See how professionals would phrase your message
 Dark Mode UI
 Built with modern design principles, TalkEase features a sleek dark interface optimized for comfort and focus.
+---
 
-🐛 Troubleshooting
+### 🐛 Troubleshooting
 "Connection refused" error
 Ensure the backend is running on http://localhost:8000
 Check that both frontend and backend are running
@@ -184,10 +193,11 @@ Contributions are welcome! Feel free to:
 Report bugs
 Suggest features
 Submit pull requests
-📄 License
+---
+### 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-🙏 Acknowledgments
+---
+### 🙏 Acknowledgments
 Groq for the Llama 3.1 API
 FastAPI for the backend framework
 React for the frontend framework
@@ -196,4 +206,3 @@ Tailwind CSS for styling
 Have questions or issues? Feel free to open an issue on the repository.
 
 Happy practicing! Remember, confidence comes with practice. 💪
-
